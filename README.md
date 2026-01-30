@@ -7,13 +7,22 @@ This project is designed for academic, learning, and demonstration purposes usin
 
 ---
 
-## 🎯 Project Objective
+## 🔍 Machine Learning Approach
 
-The main goal of this project is to:
-- Predict loan approval status using historical loan data
-- Help users understand their financial eligibility
-- Provide an EMI preview before applying for a loan
-- Demonstrate end-to-end ML pipeline with UI integration
+This project is designed as a **binary classification problem**, where the goal is to predict whether a loan application should be **Approved (1)** or **Rejected (0)** based on applicant and financial attributes.
+
+Multiple classification algorithms were trained and evaluated:
+
+- Logistic Regression
+- K-Nearest Neighbors (KNN)
+- Naive Bayes
+- Decision Tree Classifier
+- Random Forest Classifier
+
+After comparing performance on test data using **Accuracy, Precision, Recall, and F1-score**,  
+the **Random Forest Classifier** was selected as the final model due to its balanced and stable results, especially in handling real-world financial decision factors.
+
+The trained classifier is saved and used directly in the Streamlit application for real-time predictions.
 
 ---
 
@@ -29,6 +38,18 @@ The trained model is saved as:
 models/random_forest.pkl
 
 ---
+
+
+## 🎯 Project Objective
+
+The main goal of this project is to:
+- Predict loan approval status using historical loan data
+- Help users understand their financial eligibility
+- Provide an EMI preview before applying for a loan
+- Demonstrate end-to-end ML pipeline with UI integration
+
+---
+
 
 ## 📁 Project Folder Structure
 
@@ -58,6 +79,9 @@ Loan_approved_system/
 ├── README.md
 └── requirements.txt
 ```
+
+
+
 
 ---
 
@@ -164,6 +188,7 @@ http://localhost:8501
 
 ---
 
+---
 
 ## ⚠ Important Notes
 
